@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+ <head>
+ <title>OTTvsCinemas</title>
+ <link rel="stylesheet" href="{{ url_for('static', filename='ottvscinemas_style.css') }}">
+ </head>
+ <body>
+<h2>Please enter your opinion:</h2>
+
+<form method=post action="/results">
+ <dl>
+ <textarea name="moviereview" rows="10" cols="30">
+ </textarea>
+ </dl>
+ <div>
+ <input type=submit value='Submit review' name='submit_btn'>
+ </div>
+</form>
+{{ prediction }}
+</body>
+</html>
