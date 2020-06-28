@@ -1,0 +1,18 @@
+<html>
+ <head>
+ <title>Movie Classification</title>
+ <link rel="stylesheet" href="{{ url_for('static', filename='ottvscinemas_style.css') }}">
+ </head>
+ <body>
+<h3>Your movie review:</h3>
+<div>{{ content }}</div>
+<h3>Prediction:</h3>
+<div>Your opinion is more inclined towards <strong>{{ prediction }}</strong>
+ (probability: {{ probability }}%).</div>
+<div id='button'>
+ <form action="/">
+ <input type=submit value='Submit another review'>
+ </form>
+</div>
+</body>
+</html>
